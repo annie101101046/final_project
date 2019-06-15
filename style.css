@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,15 +18,14 @@
 
 .imma {
   margin-top: 20px;
-  height: 500px;
+  width: 50%;
   margin-bottom: 20px;
 }
 
 .imm {
-  margin-top: 20px;
+  margin-top: 80px;
   margin-bottom: 20px;
-  width: auto;
-  height: 300px;
+  width: 40%;
 }
 
 .key {
@@ -35,8 +36,7 @@
 
 .immd {
   margin-top: 20px;
-  width: 50vw;
-  height: 400px;
+  width: -webkit-fill-available;
   margin-bottom: 20px;
 }
 
@@ -70,6 +70,7 @@ figure {
 
 .scroll-container {
   height: 100vh;
+  width: fit-content;
   overflow: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -77,6 +78,7 @@ figure {
 .scroll-item {
   position: relative;
   scroll-snap-align: start;
+  width: -webkit-fill-available;
   height: 100vh;
   background-color: #212121;
 }
@@ -120,9 +122,7 @@ figure {
 }
 
 .scroll-item__inner {
-  padding: 1rem;
   transition: opacity 800ms, transform 800ms;
-  opacity: 0;
   transform: translate3d(0, -1.5rem, 0);
 }
 
